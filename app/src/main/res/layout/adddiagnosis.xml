@@ -1,0 +1,121 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#ffffff">
+
+        <!--  Header  Starts-->
+        <!-- Footer Ends -->
+
+        <!-- Login Form -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:id="@+id/linearLayout">
+            <!--  Email Label -->
+
+            <EditText android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+
+                android:singleLine="true"
+                android:hint="Diagnostic Centre name"
+                android:id="@+id/name"/>
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Service"
+                android:textSize="18dp"
+                android:layout_marginTop="45dp"
+                />
+            <RadioGroup
+                android:id="@+id/hrs"
+                android:layout_marginLeft="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiao24"
+                    android:text="24x7"
+                    android:textSize="18dp"/>
+
+
+
+                <RadioButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio12"
+                    android:text="12 Hrs"
+                    android:textSize="18dp"/>
+
+            </RadioGroup>
+
+            <!-- Link to Registration Screen -->
+            <!-- Link to Registration Screen -->
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:layout_marginBottom="20dip"
+                android:singleLine="true"
+                android:hint="Address"
+                android:id="@+id/address"
+              />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:inputType="phone"
+                android:layout_marginBottom="20dip"
+                android:singleLine="true"
+                android:hint="Contact Number"
+                android:id="@+id/contact"/>
+
+            <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="20dip"
+            android:singleLine="true"
+            android:hint="Latitude"
+            android:id="@+id/lat"/>
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:singleLine="true"
+                android:hint="Longitute"
+                android:id="@+id/lon"/>
+
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:layout_width="190dp"
+                android:layout_height="38dp"
+                android:textColor="#fff"
+                android:textSize="13dp"
+                android:id="@+id/login"
+                android:layout_marginBottom="10dp"
+                android:text="Submit"
+                android:background="@color/colorAccent"
+                android:onClick="addpharmacy"/>
+
+            <!-- Login Form Ends -->
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

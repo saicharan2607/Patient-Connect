@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="400dp"
+    android:minWidth="300dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="User Login"
+            android:textStyle="bold"
+            android:textColor="#2582a1"
+            android:textSize="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            >
+        </TextView>
+
+
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="UserName"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:textColor="#000000" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/userName"
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tableRow22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:textColor="#000000" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/pwd"
+            android:textColor="#000000"
+            android:inputType="text|textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            >
+        </EditText>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="146dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#4f9ac2"
+            android:onClick="login"
+            android:text="Login"
+            android:textColor="#ffffff" />
+
+
+    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ulogin"
+        android:layout_marginLeft="@dimen/fab_margin"
+        app:backgroundTint="#ef473a"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        />
+
+</LinearLayout>

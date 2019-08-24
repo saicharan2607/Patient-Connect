@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+
+    android:minHeight="400dp"
+    android:minWidth="300dp"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+
+
+        <EditText
+            android:id="@+id/name"
+            android:hint="Enter Name"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/userName"
+            android:hint="User Name"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/pwd"
+            android:hint="Enter Password"
+            android:layout_marginTop="20dp"
+            android:inputType="text|textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+        </EditText>
+       
+
+        <EditText
+            android:id="@+id/userEmail"
+            android:layout_marginTop="20dp"
+            android:hint="Enter Email"
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:layout_height="50dp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/userContact"
+            android:hint="Enter Contact No."
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:inputType="number"
+            android:layout_height="50dp" >
+        </EditText>
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioSex"
+            android:entries="@array/bg_arrays"
+            />
+
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Register"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="register"
+            android:background="#e9a51f"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+

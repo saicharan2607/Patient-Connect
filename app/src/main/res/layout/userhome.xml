@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.demotxt.droidsrce.homedashboard.Home"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#fcfcfc"
+    android:gravity="center"
+    android:id="@+id/ll"
+    android:weightSum="1">
+
+
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="28dp"
+        android:textColor="#fff"
+        android:textSize="13dp"
+        android:layout_marginBottom="10dp"
+        android:text="Hospitals"
+        android:layout_marginTop="20dp"
+        android:background="#2582a1"
+        android:onClick="viewhosp"
+        android:layout_weight="0.07" />
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="28dp"
+        android:textColor="#fff"
+        android:textSize="13dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Pharmacy"
+        android:background="#2582a1"
+        android:onClick="pharmacy"
+        android:layout_weight="0.07" />
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:textSize="13dp"
+        android:layout_marginBottom="10dp"
+        android:text="Diagnostics"
+        android:background="#2582a1"
+        android:onClick="diagnostic"
+        android:layout_weight="0.07" />
+
+
+
+
+</LinearLayout>
